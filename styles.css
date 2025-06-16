@@ -36,6 +36,7 @@ nav ul li a {
   height: 40px;
 }
 
+/* -------- HERO -------- */
 .hero {
   background: url('fond.png') center/cover no-repeat;
   height: 80vh;
@@ -52,6 +53,7 @@ nav ul li a {
   font-weight: 700;
 }
 
+/* -------- INTRO -------- */
 .intro {
   background-color: #e0e0e0;
   color: #1a1a1a;
@@ -74,6 +76,7 @@ nav ul li a {
   font-weight: 400;
 }
 
+/* -------- CARROUSEL -------- */
 .carrousel {
   text-align: center;
   padding: 3em 1em;
@@ -98,6 +101,7 @@ nav ul li a {
   scroll-snap-align: start;
 }
 
+/* -------- RESEAUX -------- */
 .reseaux {
   background-color: #1a1a1a;
   padding: 3em 1em;
@@ -117,6 +121,8 @@ nav ul li a {
   flex-wrap: wrap;
   gap: 1.5em;
   justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .widgets iframe,
@@ -127,7 +133,7 @@ nav ul li a {
   border: none;
 }
 
-/* Footer */
+/* -------- FOOTER -------- */
 footer {
   padding: 2em;
   background: #1a1a1a;
@@ -190,6 +196,7 @@ footer {
   color: white;
 }
 
+/* -------- BURGER MENU -------- */
 .burger {
   display: none;
   flex-direction: column;
@@ -206,41 +213,29 @@ footer {
   border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    margin-top: 1em;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    padding-left: 0.5em;
-  }
-}
-
-/* --------- Responsive uniquement --------- */
+/* -------- RESPONSIVE -------- */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .burger {
+    display: flex;
+    margin-top: 1em;
+  }
+
   nav ul {
+    display: none;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     gap: 0.5em;
     margin-top: 1em;
+  }
+
+  nav ul.active {
+    display: flex;
   }
 
   nav ul li {
@@ -283,9 +278,9 @@ footer {
     max-width: 100% !important;
   }
 
-.widget-wrapper {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
+  .widget-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
