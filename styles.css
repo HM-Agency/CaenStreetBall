@@ -224,23 +224,25 @@ footer {
     display: flex;
     margin-top: 1em;
   }
-
   nav ul {
     display: none;
     flex-direction: column;
+    align-items: flex-end;
     width: 100%;
-    align-items: flex-start;
     gap: 0.5em;
     margin-top: 1em;
+    text-align: right;
   }
+
 
   nav ul.active {
     display: flex;
   }
 
   nav ul li {
-    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
+
 
   .hero {
     height: auto;
