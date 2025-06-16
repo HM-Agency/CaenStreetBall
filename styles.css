@@ -190,6 +190,44 @@ footer {
   color: white;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger div {
+  background: #ffdf1a;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    padding-left: 0.5em;
+  }
+}
+
 /* --------- Responsive uniquement --------- */
 @media (max-width: 768px) {
   nav {
