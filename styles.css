@@ -1,4 +1,4 @@
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ nav {
   align-items: center;
   padding: 1em 2em;
   border-bottom: 4px solid #ffdf1a;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -109,73 +110,84 @@ nav ul li a {
   margin-bottom: 1em;
 }
 
-.widgets iframe,
-.widgets .fb-page {
-  margin: 1em auto;
-  max-width: 100%;
-  display: block;
+.widgets {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
 }
 
+.widgets iframe,
+.widgets .fb-page {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  border: none;
+}
+
+/* Footer */
 footer {
-    padding: 2em;
-    background: #1a1a1a;
-    border-top: 4px solid #ffdf1a;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: space-between;
+  padding: 2em;
+  background: #1a1a1a;
+  border-top: 4px solid #ffdf1a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
 }
 
 .footer-col {
-    flex: 1;
-    min-width: 200px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer-logo {
-    height: 30px;
-    margin-bottom: 1em;
+  height: 30px;
+  margin-bottom: 1em;
 }
 
 .footer-col ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-col ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .socials a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5em;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
 }
 
 .socials {
-    text-decoration: none;
-    }
+  text-decoration: none;
+}
 
 .newsletter {
-    display: flex;
-    gap: 0.5em;
-    margin-top: 1em;
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
 }
 
 .newsletter input {
-    flex: 1;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  flex: 1;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .footer-bottom {
-    width: 100%;
-    text-align: center;
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: white;
 }
 
 /* --------- Responsive uniquement --------- */
@@ -187,8 +199,14 @@ footer {
 
   nav ul {
     flex-direction: column;
-    gap: 1em;
-    padding-top: 1em;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-top: 1em;
+  }
+
+  nav ul li {
+    padding-left: 0.5em;
   }
 
   .hero {
@@ -216,8 +234,14 @@ footer {
     margin-bottom: 1em;
   }
 
+  .widgets {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .widgets iframe,
   .widgets .fb-page {
     width: 100% !important;
+    max-width: 100% !important;
   }
 }
