@@ -27,6 +27,7 @@
         <li><a href="contact.html">NOUS CONTACTER</a></li>
       </ul>
     </nav>
+
   </header>
 
   <section class="hero">
@@ -83,6 +84,17 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        if (burger && menu) {
+          burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+          });
+        }
+      });
+    </script>
 </body>
 </html>
