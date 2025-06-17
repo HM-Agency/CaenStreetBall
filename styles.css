@@ -206,7 +206,7 @@ footer {
 }
 
 .burger div {
-  background: #ffdf1a;
+  background-color: #ffdf1a ;
   height: 3px;
   width: 100%;
   border-radius: 2px;
