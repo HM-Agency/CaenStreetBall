@@ -20,6 +20,12 @@ nav {
   flex-wrap: wrap;
 }
 
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -36,6 +42,7 @@ nav ul li a {
   height: 40px;
 }
 
+/* -------- HERO -------- */
 .hero {
   background: url('fond.png') center/cover no-repeat;
   height: 80vh;
@@ -52,6 +59,7 @@ nav ul li a {
   font-weight: 700;
 }
 
+/* -------- INTRO -------- */
 .intro {
   background-color: #e0e0e0;
   color: #1a1a1a;
@@ -202,11 +210,10 @@ footer {
   width: 25px;
   height: 20px;
   cursor: pointer;
-  color: yellow;
 }
 
 .burger div {
-  background-color: #ffdf1a ;
+  background-color: #ffdf1a !important;
   height: 3px;
   width: 100%;
   border-radius: 2px;
@@ -221,7 +228,6 @@ footer {
 
   .burger {
     display: flex;
-    margin-top: 1em;
   }
 
   nav ul {
