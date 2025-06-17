@@ -1,100 +1,93 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caen Street Ball</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="logo.png" alt="Logo Caen Street Ball" class="logo" />
+    <html lang="fr">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Caen Street Ball</title>
+          <link rel="stylesheet" href="styles.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <a href="index.html" class="logo"><img src="logo.png" alt="Caen Street Ball" height="40"></a>
 
-      <div class="burger" id="burger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+                    <div class="burger" id="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
 
-      <ul id="menu">
-        <li><a href="notrehistoire.html">NOTRE HISTOIRE</a></li>
-        <li><a href="evenements.html">NOS ÉVÉNEMENTS</a></li>
-        <li><a href="partenaires.html">NOS PARTENAIRES</a></li>
-        <li><a href="contact.html">NOUS CONTACTER</a></li>
-      </ul>
-    </nav>
+                    <ul id="menu">
+                        <li><a href="notrehistoire.html">NOTRE HISTOIRE</a></li>
+                        <li><a href="evenements.html">NOS ÉVÉNEMENTS</a></li>
+                        <li><a href="partenaires.html">NOS PARTENAIRES</a></li>
+                        <li><a href="contact.html">NOUS CONTACTER</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="hero">
+                <h1>LE STREET BALL POUR TOUS</h1>
+            </section>
+            <section class="intro">
+                <h2>LE STREETBALL AVEC CAEN STREET BALL</h2>
+                    <p>
+                      Caen Street Ball est une association sportive crée par des étudiants avec pour objectif principal la pratique et la découverte du street ball. Actifs depuis l’été 2022, nous organisons des tournois de street ball durant l’année scolaire et durant l’été. Nos missions sont de dynamiser la vie étudiante pendant les vacances scolaires; inciter les jeunes à s’investir dans une pratique sportive régulière et mettre en avant les jeunes artistes caennais.
+                    </p>
+            </section>
+            <section class="carrousel">
+                <h2>EN IMAGES</h2>
+                    <div class="slider">
+                        <img src="photo1.jpg" alt="Tournoi 1">
+                        <img src="photo2.jpg" alt="Tournoi 2">
+                        <img src="photo3.jpg" alt="Tournoi 3">
+                    </div>
+            </section>
+            <section class="reseaux">
+                <h2>NOS RÉSEAUX</h2>
+                    <div class="widgets">
+                        <div class="widget-wrapper">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D681989931281331%26id%3D100084109895441&show_text=true&width=500" width="500" height="587" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1965284110874995%2F&show_text=false&width=560&t=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+            </section>
+            <!-- Pied de page -->
+            <footer>
+                <div class="footer-col">
+                    <img src="logo.png" alt="Caen Street Ball" class="footer-logo"/>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                        <li><a href="conditionsgeneralesutilisation.html">CGU</a></li>
+                        <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#Instagram">Instagram</a></li>
+                        <li><a href="#Facebook">Facebook</a></li>
+                        <li><a href="#Tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Caen Street Ball</p>
+                </div>
+            </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const burger = document.getElementById('burger');
+                    const menu = document.getElementById('menu');
 
-  </header>
-
-  <section class="hero">
-    <h1>LE STREET BALL POUR TOUS</h1>
-  </section>
-
-  <section class="intro">
-    <h2>LE STREETBALL AVEC CAEN STREET BALL</h2>
-    <p>
-      Caen Street Ball est une association sportive crée par des étudiants avec pour objectif principal la pratique et la découverte du street ball. Actifs depuis l’été 2022, nous organisons des tournois de street ball durant l’année scolaire et durant l’été. Nos missions sont de dynamiser la vie étudiante pendant les vacances scolaires; inciter les jeunes à s’investir dans une pratique sportive régulière et mettre en avant les jeunes artistes caennais.
-    </p>
-  </section>
-
-  <section class="carrousel">
-    <h2>EN IMAGES</h2>
-    <div class="slider">
-      <img src="photo1.jpg" alt="Tournoi 1">
-      <img src="photo2.jpg" alt="Tournoi 2">
-      <img src="photo3.jpg" alt="Tournoi 3">
-    </div>
-  </section>
-
-  <section class="reseaux">
-    <h2>NOS RÉSEAUX</h2>
-      <div class="widgets">
-          <div class="widget-wrapper">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D681989931281331%26id%3D100084109895441&show_text=true&width=500" width="500" height="587" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1965284110874995%2F&show_text=false&width=560&t=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          </div>
-        </div>
-  </section>
-
-  <!-- Pied de page -->
-  <footer>
-    <div class="footer-col">
-        <img src="logo.png" alt="Caen Street Ball" class="footer-logo"/>
-    </div>
-    <div class="footer-col">
-        <ul>
-            <li><a href="mentionslegales.html">Mentions légales</a></li>
-            <li><a href="conditionsgeneralesutilisation.html">CGU</a></li>
-            <li><a href="#confidentialite">Politique de confidentialité</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <ul>
-            <li><a href="#Instagram">Instagram</a></li>
-            <li><a href="#Facebook">Facebook</a></li>
-            <li><a href="#Tiktok">TikTok</a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Caen Street Ball</p>
-    </div>
-  </footer>
-
-  <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu');
-
-        if (burger && menu) {
-          burger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-          });
-        }
-      });
-    </script>
-</body>
-</html>
+                    if (burger && menu) {
+                      burger.addEventListener('click', () => {
+                        menu.classList.toggle('active');
+                      });
+                    }
+                  });
+            </script>
+        </body>
+    </html>
