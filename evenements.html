@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Caen Street Ball</title>
+          <link rel="stylesheet" href="styles.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <a href="index.html" class="logo"><img src="logo.png" alt="Caen Street Ball" height="40"></a>
+
+                    <div class="burger" id="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <ul id="menu">
+                        <li><a href="notrehistoire.html">NOTRE HISTOIRE</a></li>
+                        <li><a href="evenements.html">NOS ÉVÉNEMENTS</a></li>
+                        <li><a href="partenaires.html">NOS PARTENAIRES</a></li>
+                        <li><a href="contact.html">NOUS CONTACTER</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="mentions-legales" style="padding: 2em; max-width: 960px; margin: auto;">
+                    <h1>Nos événements</h1>
+
+                    <h2>Evénements à venir</h2>
+                        <p><strong>Caen Summer Street Ball</strong> - Tournoi 4x4</p>
+                        <p>Stade Helitas - 5 Juillet 2025</p>
+                    <h2>Précédents événements</h2>
+                        <p><strong>Tournoi Streetball</strong> - Tournois 3x3</p>
+                        <p>Ifs - 27 Mai 2024</p>
+                        <p>Découvre les photos du tournoi juste en dessous !</p>
+                </section>
+            </main>
+            <!-- Pied de page -->
+            <footer>
+                <div class="footer-col">
+                    <img src="logo.png" alt="Caen Street Ball" class="footer-logo"/>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                        <li><a href="conditionsgeneralesutilisation.html">CGU</a></li>
+                        <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="https://www.instagram.com/caenstreetball/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/caenstreetball">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@caenstreetball">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Caen Street Ball</p>
+                </div>
+            </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const burger = document.getElementById('burger');
+                    const menu = document.getElementById('menu');
+
+                    if (burger && menu) {
+                      burger.addEventListener('click', () => {
+                        menu.classList.toggle('active');
+                      });
+                    }
+                  });
+            </script>
+        </body>
+    </html>

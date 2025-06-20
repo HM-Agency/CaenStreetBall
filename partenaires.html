@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Caen Street Ball</title>
+          <link rel="stylesheet" href="styles.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <a href="index.html" class="logo"><img src="logo.png" alt="Caen Street Ball" height="40"></a>
+
+                    <div class="burger" id="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <ul id="menu">
+                        <li><a href="notrehistoire.html">NOTRE HISTOIRE</a></li>
+                        <li><a href="evenements.html">NOS ÉVÉNEMENTS</a></li>
+                        <li><a href="partenaires.html">NOS PARTENAIRES</a></li>
+                        <li><a href="contact.html">NOUS CONTACTER</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="mentions-legales" style="padding: 2em; max-width: 960px; margin: auto;">
+                    <h1>Nos Partenaires</h1>
+                        <p>Chez Caen Street Ball, nos partenaires jouent un rôle essentiel dans la réussite de nos événements et dans la promotion d’un sport ouvert à tous. Grâce à leur soutien, nous pouvons proposer des tournois accessibles, gratuits ou à très faible coût, tout en valorisant la culture street et les talents locaux.</p>
+                        <p>Qu’ils soient acteurs du sport, de la ville, ou du monde associatif, ces partenaires partagent nos valeurs : égalité des chances, inclusion, esprit collectif.</p>
+                        <p>Merci à eux de croire en notre projet et de contribuer à faire grandir la communauté Caen Street Ball.</p>
+                        <div class="cards-container">
+                            <div class="partner-card">
+                                <img src="chamastacos.png" alt="Chamas Tacos" />
+                            </div>
+                            <div class="partner-card">
+                                <img src="logovillecaen.png" alt="Ville de Caen" />
+                            </div>
+                            <div class="partner-card">
+                                <img src="Decathlon.png" alt="Décathlon" />
+                            </div>
+                        </div>
+                </section>
+            </main>
+            <!-- Pied de page -->
+            <footer>
+                <div class="footer-col">
+                    <img src="logo.png" alt="Caen Street Ball" class="footer-logo"/>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                        <li><a href="conditionsgeneralesutilisation.html">CGU</a></li>
+                        <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="https://www.instagram.com/caenstreetball/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/caenstreetball">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@caenstreetball">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Caen Street Ball</p>
+                </div>
+            </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const burger = document.getElementById('burger');
+                    const menu = document.getElementById('menu');
+
+                    if (burger && menu) {
+                      burger.addEventListener('click', () => {
+                        menu.classList.toggle('active');
+                      });
+                    }
+                  });
+            </script>
+        </body>
+    </html>
