@@ -20,12 +20,6 @@ nav {
   flex-wrap: wrap;
 }
 
-nav .nav-left {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -38,11 +32,44 @@ nav ul li a {
   font-weight: bold;
 }
 
+.equipe{
+  width: 200px;
+  height: 200px;
+  padding-left: 1em;
+  padding-right: 1em;
+  }
+
 .logo {
   height: 40px;
 }
 
-/* -------- HERO -------- */
+.menu h1, h2, h3, p, ul, ol {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  }
+
+h1, h2, h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+ul, ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+/* Pour éviter que tout soit collé à gauche/droite dans les sections textuelles */
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
 .hero {
   background: url('fond.png') center/cover no-repeat;
   height: 80vh;
@@ -59,7 +86,6 @@ nav ul li a {
   font-weight: 700;
 }
 
-/* -------- INTRO -------- */
 .intro {
   background-color: #e0e0e0;
   color: #1a1a1a;
@@ -139,6 +165,71 @@ nav ul li a {
   border: none;
 }
 
+.partenaires {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.partner-card {
+  background-color: #e0e0e0;
+  color: #1a1a1a;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-card img {
+  max-width: 180px;
+  max-height: 160px;
+  border-radius: 10px;
+  object-fit: contain;
+  display: flex;
+}
+
+.partner-card p {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .partner-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .partner-card img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .partner-card p {
+    font-size: 0.9em;
+  }
+}
+
+
 /* -------- FOOTER -------- */
 footer {
   padding: 2em;
@@ -210,10 +301,11 @@ footer {
   width: 25px;
   height: 20px;
   cursor: pointer;
+  color: yellow;
 }
 
 .burger div {
-  background-color: #ffdf1a !important;
+  background: #ffdf1a;
   height: 3px;
   width: 100%;
   border-radius: 2px;
@@ -228,6 +320,7 @@ footer {
 
   .burger {
     display: flex;
+    margin-top: 1em;
   }
 
   nav ul {
